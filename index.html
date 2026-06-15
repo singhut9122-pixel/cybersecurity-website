@@ -286,13 +286,14 @@ footer{
 <section id="contact">
     <h2 class="section-title">Contact Me</h2>
 
-    <form class="contact-form" id="contactForm">
+   <form class="contact-form"
+      action="https://formspree.io/f/mqeonaky"
+      method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
 
-        <input type="text" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
 
-        <input type="email" placeholder="Your Email" required>
-
-        <textarea rows="5" placeholder="Your Message" required></textarea>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
 
         <button type="submit">Send Message</button>
 
@@ -303,17 +304,6 @@ footer{
     <p>© 2026 Cyber Shield Security | All Rights Reserved</p>
 </footer>
 
-<script>
-document.getElementById('contactForm')
-.addEventListener('submit', function(e){
-
-    e.preventDefault();
-
-    alert('Thank you! Your message has been submitted.');
-
-    this.reset();
-});
-</script>
 
 </body>
 </html>
