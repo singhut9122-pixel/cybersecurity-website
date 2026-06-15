@@ -176,6 +176,47 @@ footer{
         justify-content:center;
     }
 }
+    .video-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+gap:25px;
+margin-top:40px;
+}
+
+.video-card{
+background:#161b22;
+padding:15px;
+border-radius:15px;
+transition:0.4s;
+box-shadow:0 0 15px rgba(0,217,255,0.15);
+}
+
+.video-card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(0,217,255,0.8);
+}
+
+.video-card iframe{
+width:100%;
+height:230px;
+border:none;
+border-radius:10px;
+}
+
+.video-card h3{
+margin-top:15px;
+text-align:center;
+color:#00d9ff;
+}
+
+#videos{
+padding-top:100px;
+}
+
+#videos .section-title{
+font-size:2.2rem;
+margin-bottom:50px;
+}
 </style>
 </head>
 
@@ -305,16 +346,65 @@ reduce cyber risks and maintain resilient IT environments.
 </section>
 <section id="videos">
 
-<h2 class="section-title">Cyber Security Videos</h2>
+<h2 class="section-title">Cyber Security Learning Hub</h2>
 
+<div class="video-grid">
+
+<div class="video-card">
 <iframe
-width="100%"
-height="500"
 src="https://www.youtube.com/embed/tYf0BoFe9D8"
-title="Cyber Security"
-frameborder="0"
+title="Cyber Security Fundamentals"
 allowfullscreen>
 </iframe>
+<h3>Cyber Security Fundamentals</h3>
+</div>
+
+<div class="video-card">
+<iframe
+src="https://www.youtube.com/embed/inWWhr5tnEA"
+title="FortiGate Firewall"
+allowfullscreen>
+</iframe>
+<h3>FortiGate Firewall Administration</h3>
+</div>
+
+<div class="video-card">
+<iframe
+src="https://www.youtube.com/embed/3Kq1MIfTWCE"
+title="Active Directory"
+allowfullscreen>
+</iframe>
+<h3>Active Directory Security</h3>
+</div>
+
+<div class="video-card">
+<iframe
+src="https://www.youtube.com/embed/2eLe7uz-7CM"
+title="Network Security"
+allowfullscreen>
+</iframe>
+<h3>Network Security & Protection</h3>
+</div>
+
+<div class="video-card">
+<iframe
+src="https://www.youtube.com/embed/kDEX1HXybrU"
+title="Microsoft 365"
+allowfullscreen>
+</iframe>
+<h3>Microsoft 365 Administration</h3>
+</div>
+
+<div class="video-card">
+<iframe
+src="https://www.youtube.com/embed/JdfmV2KW11I"
+title="Ethical Hacking"
+allowfullscreen>
+</iframe>
+<h3>Ethical Hacking & VAPT</h3>
+</div>
+
+</div>
 
 </section>
 <section id="contact">
